@@ -9,6 +9,7 @@ I'm building my career in **IT support, networking, systems administration, and 
 | Area | What I've worked on | Documentation |
 | --- | --- | --- |
 | Home lab and virtualization | Windows virtual machines, test user accounts, hardware and basic networking | [Home Lab](projects/home-lab.md) |
+| Wealth HQ self-hosted app | Debian LXC, DHCP/DNS troubleshooting, Python Flask dashboard, Waitress and systemd | [Wealth HQ](projects/wealth-hq.md) |
 | Networking and UniFi | Setting up UniFi wireless access points and configuring switches and firewalls with guidance at an MSP | [Networking Experience](projects/networking-unifi.md) |
 | Technical support | Desktop power supply replacement, BitLocker recovery assistance, email security review, and exposure to Datto RMM | [IT Support Experience](projects/it-support.md) |
 
@@ -19,7 +20,8 @@ I'm building my career in **IT support, networking, systems administration, and 
 - **Networking:** UniFi access points, switches, firewalls; introductory networking lab work
 - **Security and IT support:** BitLocker recovery workflow, INKY email classification review
 - **MSP tools:** Datto RMM (familiarity; specific workflow details to be documented)
-- **Virtualization and lab work:** Running multiple Windows test VMs and creating test accounts
+- **Virtualization and lab work:** Running Windows VMs and a Debian Linux LXC container under Proxmox
+- **Linux / self-hosting:** Debian package management, Bash, DHCP and IPv4 troubleshooting, Python virtual environments, Flask, Waitress and systemd
 
 ## Education and continuing learning
 
