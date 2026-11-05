@@ -4,6 +4,14 @@ Hi! I'm an early-career IT professional with an associate degree in Cybersecurit
 
 I'm building my career in **IT support, networking, systems administration, and data center operations**. This portfolio documents work I've done, technologies I've used, and projects I'm developing.
 
+## Start here
+
+**[Wealth HQ — Self-Hosted Financial Dashboard](projects/wealth-hq.md)** — My newest hands-on project: deployed a Flask site in a Debian LXC container on Proxmox, fixed a DHCP/IPv4 issue, and configured automatic startup with systemd.
+
+[![Wealth HQ dashboard screenshot](assets/wealthhq/04-wealthhq-dashboard.png)](projects/wealth-hq.md)
+
+**Other projects:** [Home Lab](projects/home-lab.md) · [Networking & UniFi](projects/networking-unifi.md) · [IT Support](projects/it-support.md)
+
 ## Featured experience
 
 | Area | What I've worked on | Documentation |
@@ -31,7 +39,7 @@ I'm building my career in **IT support, networking, systems administration, and 
 
 ## What you'll find here
 
-These are experience write-ups, not claims of production-ready software. I document the goal, my involvement, and what I learned. Future updates will add diagrams, sanitized screenshots, configuration examples, and repeatable lab instructions when available.
+These are experience write-ups, not claims of production-ready software. I document the goal, my involvement, and what I learned. Wealth HQ includes sanitized screenshots documenting troubleshooting and deployment. Future updates will add further diagrams, configuration examples, and repeatable lab instructions.
 
 > **Privacy note:** Client names, internal systems, credentials, recovery keys, and proprietary configurations are intentionally excluded.
 
