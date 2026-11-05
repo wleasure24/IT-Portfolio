@@ -2,6 +2,10 @@
 
 **Status:** Working prototype | **Environment:** Proxmox VE, Debian 12 LXC, Python 3.11, Flask, Waitress, systemd
 
+![Wealth HQ dashboard prototype](../assets/wealthhq/04-wealthhq-dashboard.png)
+
+*Working browser-based prototype on a Debian LXC container. Balances shown are placeholders.*
+
 ## Goal
 Create a lightweight financial dashboard on my own home server, accessible from my Windows PC. The eventual goal is a password-protected application for tracking balances, debts and savings goals, with optional scheduled updates and an AI assistant. Those later capabilities are **not implemented yet**.
 
@@ -33,7 +37,19 @@ Python Flask app (app.py)
 8. Created an initial copy of `app.py` as `app.py.backup` before planning the authentication update.
 
 ## Troubleshooting lesson: DHCP vs static IPv4
+
+### Initial diagnosis
+
+![No IPv4 address assigned to the container](../assets/wealthhq/01-missing-ipv4.png)
+
+![IPv4 connectivity failed](../assets/wealthhq/02-ipv4-ping-failure.png)
+
 The virtual NIC was **UP**, but selecting Static without specifying an IPv4 address meant the guest did not request one automatically. Consequently, it could not reach an IPv4 internet destination. IPv6 SLAAC independently assigned IPv6 addresses; that did not guarantee working IPv4 routing or DNS. Using DHCP provided the guest with an IPv4 lease and appropriate configuration for the network.
+
+### Verification after the fix
+
+![Network configuration and Python verified](../assets/wealthhq/03-network-and-python-fixed.png)
+
 
 ## Commands I practiced
 ```bash
@@ -53,16 +69,15 @@ cp app.py app.py.backup
 ls -l
 ```
 
-## Screenshot evidence
-Six curated, sanitized screenshots are prepared for upload to `assets/wealthhq/`:
-- `01-missing-ipv4.png` — missing IPv4 on the active NIC
-- `02-ipv4-ping-failure.png` — network unreachable
-- `03-network-and-python-fixed.png` — recovery and Python verification
-- `04-wealthhq-dashboard.png` — web UI loading in the browser
-- `05-systemd-running.png` — background service confirmed active and enabled
-- `06-backup-and-service-check.png` — code backup and service verification
+## Deployment verification
 
-Screenshots are not yet in this repository. Private network addresses and browser destination were redacted in the prepared copies. Review again before publishing.
+The dashboard was deployed behind Waitress and configured as a systemd service. I verified the service was enabled and running:
+
+![Wealth HQ systemd service active and enabled](../assets/wealthhq/05-systemd-running.png)
+
+Before changing the application for authentication, I created a backup of the working Python source and checked the service again:
+
+![Application backup and service check](../assets/wealthhq/06-backup-and-service-check.png)
 
 ## Security / limitations
 The prototype is unauthenticated and uses plain HTTP on a local network. It displays **placeholder balances**, not live banking information. It must not be exposed via port forwarding or used for real financial records yet. Account integration, a durable database, secure HTTPS access, and the AI assistant are future work.
