@@ -10,7 +10,7 @@ I'm building my career in **IT support, networking, systems administration, and 
 
 [![Wealth HQ dashboard screenshot](assets/wealthhq/04-wealthhq-dashboard.png)](projects/wealth-hq.md)
 
-**Other projects:** [Home Lab](projects/home-lab.md) · [Networking & UniFi](projects/networking-unifi.md) · [IT Support](projects/it-support.md)
+**Other projects:** [Home Lab](projects/home-lab.md) · [Networking & UniFi](projects/networking-unifi.md) · [IT Closet Field Observation](projects/it-closet-field-observation.md) · [IT Support](projects/it-support.md)
 
 ## Featured experience
 
@@ -19,6 +19,7 @@ I'm building my career in **IT support, networking, systems administration, and 
 | Home lab and virtualization | Windows virtual machines, test user accounts, hardware and basic networking | [Home Lab](projects/home-lab.md) |
 | Wealth HQ self-hosted app | Debian LXC, DHCP/DNS troubleshooting, Python Flask dashboard, Waitress and systemd | [Wealth HQ](projects/wealth-hq.md) |
 | Networking and UniFi | Setting up UniFi wireless access points and configuring switches and firewalls with guidance at an MSP | [Networking Experience](projects/networking-unifi.md) |
+| Client-site infrastructure | Observed a telephone/intercom troubleshooting visit, equipment walkthrough and cable tracing with an MSP technician | [IT Closet Field Observation](projects/it-closet-field-observation.md) |
 | Technical support | Desktop power supply replacement, BitLocker recovery assistance, email security review, and exposure to Datto RMM | [IT Support Experience](projects/it-support.md) |
 
 ## Technical skills and tools
