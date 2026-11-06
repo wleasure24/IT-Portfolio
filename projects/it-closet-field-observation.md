@@ -67,6 +67,5 @@ The music was a reported symptom; an unintended connection was a possible explan
 
 ## Photos and Client Confidentiality
 
-Photos were taken for learning purposes, but **no client-site images are published here**. Before publishing any, I would first obtain authorization from the MSP/client and remove identifying details such as vendor/customer information, phone numbers, labels, internal documentation, serial numbers, and other sensitive information.
 
 **This write-up is based on supervised observation.** It does not disclose the client's identity, topology, configurations, or credentials.
